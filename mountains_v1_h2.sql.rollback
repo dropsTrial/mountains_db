@@ -1,0 +1,36 @@
+--
+-- Base de données :  `drops_trial`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table PUBLIC.MOUNTAINS
+--
+
+DROP TABLE IF EXISTS PUBLIC.MOUNTAINS;
+CREATE TABLE `mountains` (
+  `Rank` int(3) DEFAULT NULL,
+  `Mountain` varchar(40) DEFAULT NULL,
+  `Height_Meter` int(4) DEFAULT NULL,
+  `Height_Feet` int(5) DEFAULT NULL,
+  `Prominence_Meter` int(4) DEFAULT NULL,
+  `Range` varchar(28) DEFAULT NULL,
+  `Coordinates` varchar(24) DEFAULT NULL,
+  `Parent_Mountain` varchar(18) DEFAULT NULL,
+);
+
+--
+-- Contenu de la table PUBLIC.MOUNTAINS
+--
+
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(1, 'Mount Everest / Sagarmatha / Chomolungma', 8848, 29029, 8848, 'Mahalangur Himalaya', '27°59′17″N 86°55′31″E﻿ ', '');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(2, 'K2 / Qogir / Godwin Austen', 8611, 28251, 4017, 'Baltoro Karakoram', '35°52′53″N 76°30′48″E﻿ ', 'Mount Everest');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(3, 'Kangchenjunga', 8586, 28169, 3922, 'Kangchenjunga Himalaya', '27°42′12″N 88°08′51″E﻿ ', 'Mount Everest');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(4, 'Lhotse', 8516, 27940, 610, 'Mahalangur Himalaya', '27°57′42″N 86°55′59″E﻿ ', 'Mount Everest');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(5, 'Makalu', 8485, 27838, 2386, 'Mahalangur Himalaya', '27°53′23″N 87°05′20″E﻿ ', 'Mount Everest');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(6, 'Cho Oyu', 8188, 26864, 2340, 'Mahalangur Himalaya', '28°05′39″N 86°39′39″E﻿ ', 'Mount Everest');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(7, 'Dhaulagiri I', 8167, 26795, 3357, 'Dhaulagiri Himalaya', '28°41′48″N 83°29′35″E﻿ ', 'K2');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(8, 'Manaslu', 8163, 26781, 3092, 'Manaslu Himalaya', '28°33′00″N 84°33′35″E﻿ ', 'Cho Oyu');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(9, 'Nanga Parbat', 8126, 26660, 4608, 'Nanga Parbat Himalaya', '35°14′14″N 74°35′21″E﻿ ', 'Dhaulagiri');
+INSERT INTO PUBLIC.MOUNTAINS (`Rank`, `Mountain`, `Height_Meter`, `Height_Feet`, `Prominence_Meter`, `Range`, `Coordinates`, `Parent_Mountain`) VALUES(10, 'Annapurna I', 8091, 26545, 2984, 'Annapurna Himalaya', '28°35′44″N 83°49′13″E﻿ ', 'Cho Oyu');
